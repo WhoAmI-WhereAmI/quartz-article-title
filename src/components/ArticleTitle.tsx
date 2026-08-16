@@ -6,8 +6,9 @@ import type {
 import { classNames } from "../util/lang";
 
 const ArticleTitle: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
+  const isIndexPage = fileData.slug?.endsWith("/index") ?? false;
   const title = (fileData.frontmatter as { title?: string } | undefined)?.title;
-  if (title) {
+  if (isIndexPage && title) {
     return <h1 class={classNames(displayClass, "article-title")}>{title}</h1>;
   } else {
     return null;
