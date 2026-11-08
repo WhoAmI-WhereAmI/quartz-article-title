@@ -1,6 +1,6 @@
 {
   "name": "@quartz-community/article-title",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ArticleTitle component for Quartz - displays the page title as an h1",
   "type": "module",
   "license": "MIT",
