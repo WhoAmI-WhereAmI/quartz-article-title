@@ -5,14 +5,16 @@ Renders the article title from frontmatter as an h1 heading.
 ## Installation
 
 ```bash
-npx quartz plugin add github:quartz-community/article-title
+npx quartz plugin add @quartz-community/article-title
 ```
+
+It is already included (and enabled) in the default `quartz.config.yaml`.
 
 ## Usage
 
 ```yaml title="quartz.config.yaml"
 plugins:
-  - source: github:quartz-community/article-title
+  - source: "@quartz-community/article-title"
     enabled: true
     layout:
       position: beforeBody
